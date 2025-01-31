@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="c2-assets/logo.png" type="image/x-icon">
+  <title>Shop-3.0</title>
+
+  <!-- daisyUi -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/c92552dbf7.js" crossorigin="anonymous"></script>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <!-- font style -->
+   <style>
+    .sora-font {
+      font-family: "Sora", serif;
+    }
+
+   </style>
+
+   <!-- tailwind theme -->
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgHeadColor: 'rgba(239, 235, 227, 1)',
+            bgSection:'#EFEBE3',
+            Primary:'rgba(255, 106, 0, 1)',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="sora-font">
+  <!-- header section -->
+  <header class="bg-bgHeadColor mb-24 px-4">
+    <!-- navigation  -->
+    <nav class="container mx-auto mb-8">
+      <div class="navbar ">
+
+        <div class="navbar-start">
+          <img class="hidden lg:flex w-28" src="c2-assets/logo-header.png" alt="">
+          <img class="flex lg:hidden" src="c2-assets/logo.png" alt="">
+        </div>
+
+        <div class=" navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Service</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="navbar-end">
+          <div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -right-4">
+                <li><a>Login</a></li>
+                <li><a>Resister</a></li>
+                <li><a>Product</a></li>
+                <li><a>Service</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="hidden lg:flex space-x-4 items-center">
+            <div class="space-x-3">
+              <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+            <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+            </div>
+
+            <a class=" bg-transparent border-2 border-Primary hover:text-white hover:bg-Primary py-1 px-4 rounded-lg">Login</a>
+            <a class="bg-Primary border-2 border-Primary text-white hover:text-black hover:bg-transparent py-1 px-4 rounded-lg">Resister</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- head -->
+     <div class="text-center items-center justify-center">
+      <div class="space-y-5">
+        <h2 class="text-5xl font-semibold text-black max-w-2xl mx-auto">Freshness <span class="text-Primary">You Can 
+          Count</span> On, Prices You’ll Love!</h2>
+        <p class="text-sm font-normal max-w-xl mx-auto"> Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        <img class="mx-auto max-w-full" src="c2-assets/hero-vegetables.png" alt="">
+      </div>
+     </div>
+  </header>
+
+  <!-- main section -->
+   <main></main>
+
+   <!-- footer section -->
+    <footer></footer>
+  
+</body>
+</html>
