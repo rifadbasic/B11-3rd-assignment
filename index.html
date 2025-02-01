@@ -113,9 +113,9 @@
         <h2 class="text-3xl font-semibold text-Primary">Services</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 ">
 
-        <div class="card bg-bgSection max-w-96 ">
+        <div class="col-span-2 card bg-bgSection max-w-96 ">
           <figure class="px-10 pt-10">
             <img
               src="c2-assets/Group 5.png"
@@ -128,7 +128,7 @@
           </div>
         </div>
 
-        <div class="card bg-bgSection max-w-96 ">
+        <div class="col-span-2 card bg-bgSection max-w-96 ">
           <figure class="px-10 pt-10">
             <img
               src="c2-assets/delivery.png"
@@ -141,7 +141,7 @@
           </div>
         </div>
 
-        <div class="card bg-bgSection max-w-96 ">
+        <div class=" col-span-2 card bg-bgSection max-w-96 ">
           <figure class="px-10 pt-10">
             <img
               src="c2-assets/healthy.png"
@@ -323,7 +323,7 @@
       </section>
 
       <!-- offers -->
-       <section class="container mx-auto mb-24 px-4">
+       <section class="container mx-auto mb-80 px-4">
         <div>
 
           <div class="mb-10">
@@ -332,11 +332,11 @@
 
           <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
 
-            <div class="md:col-span-3 flex justify-between items-center bg-[#c56b22] rounded-3xl p-2">
+            <div class="md:col-span-3 flex justify-between items-center bg-[#6cc01d] rounded-3xl p-2">
               <div class="text-left ml-4 space-y-4">
                 <img class="mb-6" src="c2-assets/dawat-logo.png" alt="">
 
-                  <h3 class=" bg-green-400 border-none rounded-xl py-2  px-2 lg:px-12   mb-6 text-white text-base md:text-2xl font-normal items-center">Cook Exotic Dishes</h3>
+                  <h3 class=" bg-green-600 border-none rounded-xl py-2  px-2 lg:px-12   mb-6 text-white text-base md:text-2xl font-normal items-center">Cook Exotic Dishes</h3>
                 <h3 class="text-lg md:text-4xl font-bold text-white"> <span class="font-normal">UP to</span> 20% OFF</h3>
                 
               </div>
@@ -345,11 +345,11 @@
               </div>
             </div>
 
-            <div class=" md:col-span-2 flex justify-between items-center bg-[#9cd432] rounded-3xl px-4 py-4">
+            <div class=" md:col-span-2 flex justify-between items-center bg-[#27a4df] rounded-3xl px-4 py-4">
               <div class="text-left space-y-4 ml-4">
                 <img class="mb-6" src="c2-assets/india-gate-logo.png" alt="">
                 <div>
-                  <h3 class=" bg-blue-500 border-none rounded-xl py-2  px-2 lg:px-12   mb-6 text-white text-base md:text-2xl font-normal items-center">World’s No.1 Rice</h3>
+                  <h3 class=" bg-blue-600 border-none rounded-xl py-2  px-2 lg:px-12   mb-6 text-white text-base md:text-2xl font-normal items-center">World’s No.1 Rice</h3>
                 <h3 class="text-lg md:text-4xl font-bold text-white"> <span class="font-normal">UP to</span> 40% OFF</h3>
                 </div>
               </div>
@@ -365,24 +365,33 @@
    </main>
 
    <!-- footer section -->
-    <footer class="bg-Primary mt-24">
-      <div class="container mx-auto">
-        <div>
-          
+    <footer class="bg-Primary ">
+      <div class="container mx-auto px-4">
+
+        <div class="relative -top-48 grid grid-cols-1 md:grid-cols-2 gap-2 bg-bgSection rounded-3xl py-10 px-3 text-center md:text-left items-center justify-center mx-auto">
+          <div class="mx-auto">
+            <img src="c2-assets/vegetable-busket.png" alt="">
+          </div>
+          <div class="space-y-4">
+            <h2 class="text-4xl font-semibold text-black">Get Grocery News!</h2>
+            <p class="text-black text-xl">Exclusive training tips, ticks, product deals and more.</p>
+            <input class="py-4 px-4 w-72 lg:w-96 rounded-lg outline-none text-xl"  type="email" placeholder="Enter email..."> <br>
+            <button class="btn btn-success text-xl font-medium text-white px-8">Submit</button>
+          </div>
         </div>
 
         <div>
-          <div class="footer text-base-content p-10">
-            <nav class="text-white">
+          <div class="footer text-base-content pb-10">
+            <nav class="text-white text-lg">
               <img src="c2-assets/logo-footer.png" alt="">
               <p class="max-w-96 mx-auto text-gray-200">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </nav>
-            <nav class="text-white">
+            <nav class="text-white space-y-4 text-lg">
               <a class="link link-hover">Products</a>
               <a class="link link-hover">Service</a>
               <a class="link link-hover">Contact us</a>
             </nav>
-            <nav class="text-white">
+            <nav class="text-white text-lg">
               <h6 class="text-xl font-semibold text-gray-100">Follow Us</h6>
               <div class="grid grid-flow-col gap-4">
                 <a class="text-xl cursor-pointer">
