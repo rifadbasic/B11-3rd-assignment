@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +20,49 @@
 
   <!-- font style -->
    <style>
+    html{
+      scroll-behavior: smooth;
+    }
     .sora-font {
       font-family: "Sora", serif;
+    }
+
+    #header-text
+    {
+      animation: textin 1.5s ease ;
+    }
+    #header-p{
+      animation: textp 1.5s ease ;
+    }
+
+    @keyframes textin {
+      10%{
+        transform: translateX(-1500px);
+        opacity: .5;
+      }
+      50%{
+        transform: translateX(-800px);
+        opacity: 1;
+      }
+      100%{
+        transform: translateX(-0px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes textp {
+      10%{
+        transform: translateX(1500px);
+        opacity: .5;
+      }
+      50%{
+        transform: translateX(800px);
+        opacity: 1;
+      }
+      100%{
+        transform: translateX(0px);
+        opacity: 1;
+      }
     }
 
    </style>
@@ -56,9 +97,9 @@
 
         <div class=" navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Product</a></li>
-            <li><a>Service</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
@@ -73,9 +114,9 @@
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -right-4">
                 <li><a>Login</a></li>
                 <li><a>Resister</a></li>
-                <li><a>Product</a></li>
-                <li><a>Service</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -96,19 +137,21 @@
     <!-- head -->
      <div class="text-center items-center justify-center">
       <div class="space-y-5">
-        <h2 class="text-5xl font-semibold text-black max-w-2xl mx-auto">Freshness <span class="text-Primary">You Can 
-          Count</span> On, Prices You’ll Love!</h2>
-        <p class="text-sm font-normal max-w-xl mx-auto"> Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        <h2 id="header-text" class="text-5xl font-semibold text-black max-w-2xl mx-auto">Freshness <span class="text-Primary">You Can Count</span> On, Prices You’ll Love!</h2>
+        <p id="header-p" class="view text-sm font-normal max-w-xl mx-auto"> Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
         <img class="mx-auto max-w-full" src="c2-assets/hero-vegetables.png" alt="">
       </div>
      </div>
   </header>
 
+
+
+
   <!-- main section -->
-   <main >
+   <main  class="z-50">
 
     <!-- service section -->
-     <section class="container mx-auto mb-24 px-4">
+     <section id="service" class="container mx-auto mb-24 px-4 z-50">
       <div class="mb-10">
         <h2 class="text-3xl font-semibold text-Primary">Services</h2>
       </div>
@@ -158,7 +201,7 @@
      </section>
 
      <!-- popular product -->
-      <section class="bg-bgHeadColor mb-24 px-4 py-20 md:py-48">
+      <section id="product" class="bg-bgHeadColor mb-24 px-4 py-20 md:py-48">
         <div class="container mx-auto">
 
           <div class="mb-10">
@@ -432,7 +475,7 @@
     <footer class="bg-Primary ">
       <div class="container mx-auto px-4">
 
-        <div class="relative -top-72 md:-top-36 lg:-top-48 grid grid-cols-1 md:grid-cols-2 gap-2 bg-bgSection rounded-3xl py-10 px-3 text-center md:text-left items-center justify-center mx-auto">
+        <div id="contact" class="relative -top-72 md:-top-36 lg:-top-48 grid grid-cols-1 md:grid-cols-2 gap-2 bg-bgSection rounded-3xl py-10 px-3 text-center md:text-left items-center justify-center mx-auto">
           <div class="mx-auto">
             <img src="c2-assets/vegetable-busket.png" alt="">
           </div>
@@ -444,7 +487,7 @@
           </div>
         </div>
 
-        <div class="relative -top-20 md:-top-16 lg:-top-10">
+        <div class="relative -top-20 md:-top-16 lg:-top-10 ">
           <div class="footer text-base-content pb-10">
             <nav class="text-white text-lg">
               <img src="c2-assets/logo-footer.png" alt="">
